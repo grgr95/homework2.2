@@ -3,8 +3,8 @@ public class Main {
         /*если клиент пополняет счет больше, чем на 1000 рублей,*/
         /*то оператор дарит ему по 1 рублю за каждые полные 100 рублей*/
 
-        int initialBalance = 600;
-        int amountDeposit = 1000;
+        int initialBalance = 700;
+        int amountDeposit = 980;
         int bonus;
 
         if (amountDeposit > 950) {
