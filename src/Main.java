@@ -14,5 +14,6 @@ public class Main {
             bonus = 0;
         }
         System.out.println("Счет клиента:" + (initialBalance + amountDeposit + bonus) + "рублей");
+        System.out.println("Ваш бонус составил:"+ bonus +"рублей");
     }
 }
