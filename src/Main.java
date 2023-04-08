@@ -1,19 +1,20 @@
 public class Main {
     public static void main(String[] args) {
-        /*если клиент пополняет счет больше, чем на 950 рублей,*/
-        /*то оператор дарит ему по 1 рублю за каждые полные 100 рублей*/
-
+        int customerAccount = 100;
         int bonusScale = 100;
-        int initialBalance = 100;
-        int amountDeposit = 980;
+        int uploadVolume = 1100;
         int bonus;
 
-        if (amountDeposit >= 950) {
-            bonus = amountDeposit / bonusScale;;
+        if (uploadVolume >= 1000){
+            bonus = uploadVolume / bonusScale;
         } else {
             bonus = 0;
         }
-        System.out.println("Счет клиента:" + (initialBalance + amountDeposit + bonus) + "рублей");
-        System.out.println("Ваш бонус составил:"+ bonus +"рублей");
+
+        int totalAccount = customerAccount + uploadVolume + bonus;
+
+        System.out.println("Вы пополнили счёт на " + uploadVolume + " руб.");
+        System.out.println("Ваш бонус составил " + bonus + " руб.");
+        System.out.println("Ваш баланс " + totalAccount + " руб.");
     }
 }
